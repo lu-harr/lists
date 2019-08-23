@@ -3,8 +3,11 @@ git status (what's the current situation?)
 git init (start using git in this directory and all subdirectories)
 git add (stage a file - line it up to be committed next, but don't commit it)
 git commit -m "message" (commit a file, with this commit message)
-git diff <file> (see what has changed since the last commit)
 git log (list all the previous commits and messages)
+git diff <file> (see what has changed in an unstaged file)
+git diff --staged <file>  (see what has changed between a staged file and the last commit)
+git reset (unstage all staged files)
+git reset --hard (undo all changes to files - dangerous!!!)
 
 # alternative commit commands
 git commit -am "message" (stage and commit all files that are being tracked, with this commit message)
