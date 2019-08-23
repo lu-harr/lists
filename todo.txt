@@ -1,8 +1,3 @@
-# go back in time
-git checkout <sha> (change the tracked files back to how they were at this previous commit)
-git checkout master (change the tracked files back to how they are at the most recent commit on the master branch)
-git checkout HEAD~1 (change the tracked files back to how they were one commit ago)
-
 # creating a GitHub repository
 log in to GitHub
 click on the '+' in the upper-right corner and select 'New repository'

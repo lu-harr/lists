@@ -13,3 +13,8 @@ git reset --hard (undo all changes to files - dangerous!!!)
 git commit -am "message" (stage and commit all files that are being tracked, with this commit message)
 git commit --amend (commit any staged files and squash this commit with the last commit, using that commit's message)
 git commit --amend -m "new message" (commit any staged files and squash this commit with the last commit, using this new commit message)
+
+# go back in time
+git checkout <sha> (change the tracked files back to how they were at this previous commit)
+git checkout master (change the tracked files back to how they are at the most recent commit on the master branch)
+git checkout HEAD~1 (change the tracked files back to how they were one commit ago)
