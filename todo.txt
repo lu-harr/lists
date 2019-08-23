@@ -1,14 +1,8 @@
 
 
-# add a remote repository (like a github repo) to your existing git repo
-git remote -v (list all remotes branches and their URLs)
-git remote add <remote_name> <remote_url> (create a new remote, giving it a name and pointing to a URL)
-git fetch <remote_name> (get information about branches and commits currently on the remote)
-git merge <remote_name/remote_branch> (merge the commits on a branch of the remote into your current branch)
-git merge --ff-only <remote_name/remote_branch> (merge commits from a remote branch into your current branch *only* if they can be applied after the most recent commit on you current branch without a merge; a fast-forward merge)
-git pull <remote_name> <remote_branch> (do 'git fetch <remote_name>' and 'git merge <remote_name/remote_branch>' in one go)
-* git gr (print a nice illustration of all branches, remotes, and commits - not a standard git command, see useful_tools.R)
-git push <remote_name> <local_branch> (copy the local branch up to the remote, but only if it can do a fast-forward merge)
+The ELSE instructions above also work (minus the first line) to clone someone else's GitHub repository
+
+
 
 # resolving a merge conflict
 git merge <branch> (merge the branch into your current branch)
