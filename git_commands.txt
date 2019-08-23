@@ -18,3 +18,20 @@ git commit --amend -m "new message" (commit any staged files and squash this com
 git checkout <sha> (change the tracked files back to how they were at this previous commit)
 git checkout master (change the tracked files back to how they are at the most recent commit on the master branch)
 git checkout HEAD~1 (change the tracked files back to how they were one commit ago)
+
+# creating a GitHub repository
+log in to GitHub
+click on the '+' in the upper-right corner and select 'New repository'
+enter a name and description
+decide whether to make it public or private
+IF you already have a local git repo to send up
+  do *not* select the options to add a README, .gitignore, and license
+  select create repository
+  click to copy the https url
+  use this to add as a remote using the instructions below
+ELSE
+  you can select some of those options to initialize the repository
+  click on the green 'Clone or download' button and copy the https url to use as <remote_url> below
+  do: 'git clone <remote_url>' in a directory, and the git repo will be created in a directory with the name of the repo, and the remote already registered as 'origin'
+
+The ELSE instructions above also work (minus the first line) to clone someone else's GitHub repository
