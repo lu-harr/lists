@@ -43,3 +43,22 @@ git merge --ff-only <remote_name/remote_branch> (merge commits from a remote bra
 git pull <remote_name> <remote_branch> (do 'git fetch <remote_name>' and 'git merge <remote_name/remote_branch>' in one go)
 * git gr (print a nice illustration of all branches, remotes, and commits - not a standard git command, see useful_tools.R)
 git push <remote_name> <local_branch> (copy the local branch up to the remote, but only if it can do a fast-forward merge)
+
+
+
+The ELSE instructions above also work (minus the first line) to clone someone else's GitHub repository
+
+
+
+# resolving a merge conflict
+git merge <branch> (merge the branch into your current branch)
+if there is a merge conflict, manually edit the files, searching files for '===' to see what needs changing, then delete the conflict markup
+git add <conflicted_files> (stage the files you edited to be merged)
+git merge --continue (finish the merge, using your resolution to the conflict)
+
+# create a branch (alternate reality)
+git checkout -b <local_branch> (create a new branch, splitting off from the current commit, and make that the HEAD)
+git branch -v (list all current branches and their most recent commits)
+git checkout <local_branch> (switch HEAD to the most recent commit on the named branch)
+git branch -d <local_branch> (delete this branch - you can't delete the branch you are currently on!)
+git merge <local_branch> (try to merge the branches)
