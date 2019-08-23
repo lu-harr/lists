@@ -1,0 +1,20 @@
+# tldr
+An awesome commandline utility to provide really simple example-based helpfiles for commandline tools.
+E.g. you just do:
+  tldr tar
+to get information about the tar command, or:
+  tldr git commit
+to get examples of how to use git commit
+
+To install it you need node.js and the npm package manager (see here: https://nodejs.org/en/download/), then install tldr (see here: https://www.npmjs.com/package/tldr)
+
+
+# git gr
+This is a really useful alias (simple renaming of a complicated command) that I copied from stackoverflow to visualise the current state of local and remote branches
+You can get it by adding the following to the .gitconfig file in your home directory:
+
+[alias]
+        gr = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+
+
+
