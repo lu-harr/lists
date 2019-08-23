@@ -1,7 +1,5 @@
 
 
-The ELSE instructions above also work (minus the first line) to clone someone else's GitHub repository
-
 # add a remote repository (like a github repo) to your existing git repo
 git remote -v (list all remotes branches and their URLs)
 git remote add <remote_name> <remote_url> (create a new remote, giving it a name and pointing to a URL)

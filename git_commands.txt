@@ -33,3 +33,11 @@ ELSE
   you can select some of those options to initialize the repository
   click on the green 'Clone or download' button and copy the https url to use as <remote_url> below
   do: 'git clone <remote_url>' in a directory, and the git repo will be created in a directory with the name of the repo, and the remote already registered as 'origin
+
+
+
+
+The ELSE instructions above also work (minus the first line) to clone someone else's GitHub repository
+
+
+
