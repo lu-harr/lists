@@ -1,1 +1,15 @@
-to be populated with git commands I've covered...
+# start committing into a git repo
+git status (what's the current situation?)
+git init (start using git in this directory and all subdirectories)
+git add (stage a file - line it up to be committed next, but don't commit it)
+git commit -m "message" (commit a file, with this commit message)
+git log (list all the previous commits and messages)
+git diff <file> (see what has changed in an unstaged file)
+git diff --staged <file>  (see what has changed between a staged file and the last commit)
+git reset (unstage all staged files)
+git reset --hard (undo all changes to files - dangerous!!!)
+
+# alternative commit commands
+git commit -am "message" (stage and commit all files that are being tracked, with this commit message)
+git commit --amend (commit any staged files and squash this commit with the last commit, using that commit's message)
+git commit --amend -m "new message" (commit any staged files and squash this commit with the last commit, using this new commit message)
